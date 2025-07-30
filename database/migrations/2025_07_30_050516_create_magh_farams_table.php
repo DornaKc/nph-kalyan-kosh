@@ -23,7 +23,7 @@ return new class extends Migration
             $table->string('requested_by_name')->nullable();
             $table->string('requested_by_position')->nullable();
             $table->date('requested_by_date')->nullable();
-
+  
             // Recommended by
             $table->string('recommended_by_name')->nullable();
             $table->string('recommended_by_position')->nullable();
