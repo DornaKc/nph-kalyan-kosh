@@ -12,6 +12,7 @@ class NepaliMonthSeeder extends Seeder
     /**
      * Run the database seeds.
      */
+    
     public function run(): void
     {
         DB::table('nepali_months')->delete();
