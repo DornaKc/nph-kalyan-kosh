@@ -59,6 +59,9 @@
                                             <li class="nav-item" data-item="maghFaram"><a class="nav-item-hold" href="#"><i class="nav-icon i-Bar-Chart"></i><span class="nav-text">Magh Faram</span></a>
                                                 <div class="triangle"></div>
                                             </li>
+                <li class="nav-item" data-item="kharidAadesh"><a class="nav-item-hold" href="#"><i class="nav-icon i-Bar-Chart"></i><span class="nav-text">Kharid Aadesh</span></a>
+                    <div class="triangle"></div>
+                </li>
                             <li class="nav-item"><a class="nav-item-hold" href="{{route('fiscalYear.index')}}"><i class="nav-icon i-Calendar-2"></i><span class="nav-text">Fiscal Year</span></a>
                                 <div class="triangle"></div>
                             </li>
@@ -72,6 +75,10 @@
             <ul class="childNav" data-parent="maghFaram">
                 <li class="nav-item"><a href="{{route('maghFaram.create')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">Create</span></a></li>
                 <li class="nav-item"><a href="{{route('maghFaram.index')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">List</span></a></li>
+            </ul>
+            <ul class="childNav" data-parent="kharidAadesh">
+                <li class="nav-item"><a href="{{route('kharidAadesh.create')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">Create</span></a></li>
+                <li class="nav-item"><a href="{{route('kharidAadesh.index')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">List</span></a></li>
             </ul>
         </div>
         <div class="sidebar-overlay"></div>
