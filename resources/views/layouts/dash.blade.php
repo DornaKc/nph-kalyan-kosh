@@ -82,6 +82,56 @@
                     {{--                    @endforeach --}}
                     {{--                @endif --}}
                 </ul>
+    </div>
+    <div class="side-content-wrap">
+        <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+            <ul class="navigation-left">
+{{--                @if(auth()->user())--}}
+{{--                    @foreach(auth()->user()->role as $role)--}}
+{{--                        @if($role->name == 'Super Admin')--}}
+                                            <li class="nav-item" data-item="maghFaram"><a class="nav-item-hold" href="#"><i class="nav-icon i-Bar-Chart"></i><span class="nav-text">Magh Faram</span></a>
+                                                <div class="triangle"></div>
+                                            </li>
+                <li class="nav-item" data-item="kharidAadesh"><a class="nav-item-hold" href="#"><i class="nav-icon i-Bar-Chart"></i><span class="nav-text">Kharid Aadesh</span></a>
+                    <div class="triangle"></div>
+                </li>
+                            <li class="nav-item"><a class="nav-item-hold" href="{{route('fiscalYear.index')}}"><i class="nav-icon i-Calendar-2"></i><span class="nav-text">Fiscal Year</span></a>
+                                <div class="triangle"></div>
+                            </li>
+{{--                        @endif--}}
+{{--                    @endforeach--}}
+{{--                @endif--}}
+            </ul>
+        </div>
+        <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
+            <!-- Submenu Dashboards-->
+            <ul class="childNav" data-parent="maghFaram">
+                <li class="nav-item"><a href="{{route('maghFaram.create')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">Create</span></a></li>
+                <li class="nav-item"><a href="{{route('maghFaram.index')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">List</span></a></li>
+            </ul>
+            <ul class="childNav" data-parent="kharidAadesh">
+                <li class="nav-item"><a href="{{route('kharidAadesh.create')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">Create</span></a></li>
+                <li class="nav-item"><a href="{{route('kharidAadesh.index')}}"><i class="nav-icon i-Clock-3"></i><span class="item-name">List</span></a></li>
+            </ul>
+        </div>
+        <div class="sidebar-overlay"></div>
+    </div>
+    <!-- =============== Left side End ================-->
+    <div class="main-content-wrap sidenav-open d-flex flex-column">
+        <!-- ============ Body content start ============= -->
+        <div class="main-content">
+
+
+            @yield('content')
+
+
+        </div><!-- Footer Start -->
+        <div class="flex-grow-1"></div>
+        <div class="app-footer">
+            <div class="row">
+                <div class="col-md-9">
+                    <p><strong>नेपाल प्रहरी अस्पताल कल्याण कोष</strong></p>
+                </div>
             </div>
             <div class="sidebar-left-secondary rtl-ps-none" data-perfect-scrollbar="" data-suppress-scroll-x="true">
                 <!-- Submenu Dashboards-->
