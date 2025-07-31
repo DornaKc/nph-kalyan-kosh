@@ -10,4 +10,9 @@ class FiscalYear extends Model
     {
         return $this->hasMany(MaghFaram::class, 'fiscal_id');
     }
+
+    public function budgets()
+    {
+        return $this->hasMany(Budget::class, 'fiscal_id');
+    }
 }

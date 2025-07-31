@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\backend\BudgetController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\backend\FiscalYearController;
 use App\Http\Controllers\backend\MaghFaramController;
@@ -22,7 +23,7 @@ Route::middleware('auth')->group(function () {
 
     Route::resource('fiscalYear', FiscalYearController::class);
     Route::resource('maghFaram', MaghFaramController::class);
-
+    Route::resource('budget', BudgetController::class);
 
 });
 
